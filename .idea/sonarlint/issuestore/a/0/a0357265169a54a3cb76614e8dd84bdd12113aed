@@ -1,0 +1,9 @@
+
+g	java:S112&"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8Ç–ƒÛ1
+q
+java:S1450"URemove the "userId" field and declare it as a local variable in the relevant methods.(íÃË8š¬”Û1
+]
+java:S1128"ARemove this unused import 'notebook.util.mapper.impl.UserMapper'.(šÕàv8ìİÛ1
+_
+java:S1128
+"=Remove this unused import 'notebook.util.mapper.Runner.HASH'.(„Ä›ïûÿÿÿÿ8ìİÛ1

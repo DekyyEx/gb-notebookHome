@@ -1,0 +1,13 @@
+
+[
+java:S1128"?Remove this unused import 'notebook.controller.UserController'.(ÕÇ¢b8Şª­Û1
+`
+java:S1128"CRemove this unused import 'notebook.model.repository.GBRepository'.(ñ»¡À8Şª­Û1
+l
+java:S1128"JRemove this unused import 'notebook.model.repository.impl.UserRepository'.(ÎÒ¬şıÿÿÿÿ8ßª­Û1
+U
+java:S1128"3Remove this unused import 'notebook.view.UserView'.(†è²ğıÿÿÿÿ8ßª­Û1
+Z
+java:S1128">Remove this unused import 'notebook.util.DBConnector.DB_PATH'.(‘¡†W8ßª­Û1
+a
+java:S1128	"?Remove this unused import 'notebook.util.DBConnector.createDB'.(ÿ¡÷©øÿÿÿÿ8ßª­Û1

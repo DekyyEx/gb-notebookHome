@@ -49,3 +49,11 @@ Q.idea/sonarlint/securityhotspotstore/1/3/13b42cb69eb2754ff91065f71a138281a23172
 Q.idea/sonarlint/securityhotspotstore/5/4/547ab047e1104c1b2c5f6ebd1f96913228ee3b17,4\5\45a7c92d64af9ff1abb3a217427c82dd67d3cca2
 
 Q.idea/sonarlint/securityhotspotstore/8/f/8f089c3c38d767b8721d487d661ccce685688a69,c\2\c212b33e31761e88606a0da206e76b42a5ef8a7b
+L
+src/notebook/model/User.java,4\6\46891c0d29d61c0d0a5050d97bb85905fd92998c
+T
+$src/notebook/util/mapper/Mapper.java,1\c\1cd6e52df8b1d4e35d00cb83ec5a4b89632fcbdb
+>
+src/README.txt,2\2\22057da97759a9e1ffb6b143fbc60856e9906161
+8
+test.txt,4\b\4b6fcb2d521ef0fd442a5301e7932d16cc9f375a

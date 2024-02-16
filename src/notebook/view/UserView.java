@@ -4,10 +4,7 @@ import notebook.controller.UserController;
 import notebook.model.User;
 import notebook.util.Commands;
 import notebook.util.mapper.impl.UserMapper;
-
 import java.util.Scanner;
-
-import static notebook.util.mapper.Runner.HASH;
 
 public class UserView {
     private final UserController userController;

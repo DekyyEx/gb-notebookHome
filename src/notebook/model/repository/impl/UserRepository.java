@@ -7,6 +7,7 @@ import notebook.model.repository.GBRepository;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 
@@ -57,9 +58,17 @@ public class UserRepository implements GBRepository {
     public Optional<User> update(Long userId, User update) {
         List<User> users = findAll();
         User editUser = findById(userId).orElseThrow(() -> new RuntimeException("User not found"));
-        if (!update.getFirstName().isEmpty()) editUser.setFirstName(update.getFirstName());
-        if (!update.getLastName().isEmpty()) editUser.setLastName(update.getLastName());
-        if (!update.getPhone().isEmpty()) editUser.setPhone(update.getPhone());
+        users.remove(editUser);
+        if (!update.getFirstName().isEmpty()) {
+            editUser.setFirstName(update.getFirstName());
+        }
+        if (!update.getLastName().isEmpty()) {
+            editUser.setLastName(update.getLastName());
+        }
+        if (!update.getPhone().isEmpty()) {
+            editUser.setPhone(update.getPhone());
+        }
+        users.add(editUser);
         write(users);
         return Optional.of(update);
     }
@@ -75,6 +84,7 @@ public class UserRepository implements GBRepository {
 
     private void write(List<User> users) {
         List<String> lines = new ArrayList<>();
+        users.sort(Comparator.comparing(User::getId));
         for (User u : users) {
             lines.add(mapper.toInput(u));
         }

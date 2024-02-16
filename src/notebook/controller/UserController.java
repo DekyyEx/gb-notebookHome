@@ -18,18 +18,14 @@ public class UserController {
     }
 
     public User readUser(Long userId) throws Exception {
-        List<User> users = repository.findAll();
-        for (User user : users) {
-            if (Objects.equals(user.getId(), userId)) {
-                return user;
-            }
-        }
-
-        throw new RuntimeException("User not found");
+        return repository.findById(userId).orElseThrow(() -> new RuntimeException("User not found"));
     }
+
 
     public void updateUser(String userId, User update) {
         update.setId(Long.parseLong(userId));
         repository.update(Long.parseLong(userId), update);
     }
+
+    public boolean deleteuser(Long userId) {return repository.delete(userId);}
 }
